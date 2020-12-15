@@ -1,0 +1,304 @@
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px darkgray solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.sitename {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav > li > a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.guide {
+    position: relative;
+    margin: 0 20px;
+}
+
+.guide::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .3s;
+}
+
+.guide:hover::after {
+    transform: scale(1, 1);
+}
+
+.searchbox {
+    padding-right: 20px;
+}
+
+/* ヘッダー下スライド画像 */
+.slide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slide > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: slideshow 24s linear infinite;
+}
+
+.slide img:nth-child(2){
+    animation-delay: 8s;
+}
+
+.slide img:last-child{
+    animation-delay: 16s;
+}
+
+@keyframes slideshow {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    28%{
+        opacity: 1;
+    }
+    38%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* リストメニュー */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.bt {
+    color: black;
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px #373737 solid;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px 80px;
+    margin: 10px 15px 0px 15px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bt:hover {
+    background-color: #606060;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.news {
+    width: 100%;
+    color: #4F4F4F;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    letter-spacing: 7px;
+    text-shadow: 
+        1px 0 0 #4F4F4F,
+        2px 0 0 #4F4F4F,
+        3px 0 0 #4F4F4F,
+        3px 3px 0 #ACD1CD,
+        4px 4px 0 #ACD1CD,
+        6px 5px 0 #ACD1CD;
+}
+
+.wrapping {
+    width: 400px;
+}
+
+.gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contents {
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+/* Pickup Item */
+.Pickup {
+    background-color: whitesmoke;
+}
+
+.pickupitem {
+    width: 100%;
+    color: #4F4F4F;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    letter-spacing: 7px;
+    text-shadow: 
+        1px 0 0 #4F4F4F,
+        2px 0 0 #4F4F4F,
+        3px 0 0 #4F4F4F,
+        3px 3px 0 #D4A1B0,
+        4px 4px 0 #D4A1B0,
+        6px 5px 0 #D4A1B0;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+td {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.rankingname {
+    width: 100%;
+    color: #4F4F4F;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 70px;
+    letter-spacing: 7px;
+    text-shadow: 
+        1px 0 0 #4F4F4F,
+        2px 0 0 #4F4F4F,
+        3px 0 0 #4F4F4F,
+        3px 3px 0 #D8BD82,
+        4px 4px 0 #D8BD82,
+        6px 5px 0 #D8BD82;
+}
+
+.rank1 {
+    font-size: 27px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    padding-bottom: 5px;
+}
+
+.rank2-3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    padding-bottom: 5px;
+}
+
+.productimg {
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.productname {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    transition: 0.3s;
+}
+
+.productname:hover {
+    color: #A0907C;
+    text-align: center;
+    text-decoration: 2px underline;
+    text-decoration-color: #A0907C;
+}
+/* #ECE3D8 */
+
+.price {
+    text-align: center;
+    padding:10px 0 70px 0;
+}
+
+/* 店舗案内 */
+.businesshours {
+    padding-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.line {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+.map {
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+
+footer {
+    width: 100%;
+    height: 430px;
+    background-color: whitesmoke;
+    
+}
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+}
