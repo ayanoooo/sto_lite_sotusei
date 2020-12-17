@@ -104,7 +104,7 @@ header {
 .menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .bt {
@@ -130,22 +130,29 @@ header {
     cursor: pointer;
 }
 
+.newsbg {
+    /* background-color: whitesmoke; */
+    padding: 10px 0;
+}
+
 .news {
+    font-family: 'Kaushan Script', cursive;
     width: 100%;
     color: #4F4F4F;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 60px;
     text-align: center;
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding: 20px 0 10px 0;
     letter-spacing: 7px;
-    text-shadow: 
-        1px 0 0 #4F4F4F,
-        2px 0 0 #4F4F4F,
-        3px 0 0 #4F4F4F,
-        3px 3px 0 #ACD1CD,
-        4px 4px 0 #ACD1CD,
-        6px 5px 0 #ACD1CD;
+    text-shadow:
+        3px 3px 0 #ffffff,
+        4px 4px 0 #ffffff,
+        6px 5px 0 #b6b6b6;
+}
+
+.news2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .wrapping {
@@ -165,33 +172,96 @@ header {
     font-size: 20px;
 }
 
-/* Pickup Item */
-.Pickup {
-    background-color: whitesmoke;
-}
-
-.pickupitem {
+.feature {
+    font-family: 'Kaushan Script', cursive;
     width: 100%;
     color: #4F4F4F;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 60px;
     text-align: center;
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding: 30px 0 10px 0;
     letter-spacing: 7px;
-    text-shadow: 
-        1px 0 0 #4F4F4F,
-        2px 0 0 #4F4F4F,
-        3px 0 0 #4F4F4F,
-        3px 3px 0 #D4A1B0,
-        4px 4px 0 #D4A1B0,
-        6px 5px 0 #D4A1B0;
+    text-shadow:
+        3px 3px 0 #cddad8,
+        4px 4px 0 #cddad8,
+        6px 5px 0 #cddad8;
+    border-top: 5px black dotted;
+}
+
+.feature2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.xmas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 150px;
+    border-bottom: 5px black dotted;
+}
+
+.specialfeature {
+    width: 500px;
+    height: 305px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 30px;
+}
+
+.specialfeature .xmascaption {
+    font-size: 130%;
+    text-align: center;
+    color: rgb(58, 58, 58);
+}
+
+.specialfeature .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.603);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.specialfeature:hover .mask {
+    opacity: 1;
+    padding-top: 80px;
+}
+
+/* Pickup Item */
+/* .Pickup {
+    background-color: whitesmoke;
+} */
+
+.pickupitem {
+    font-family: 'Kaushan Script', cursive;
+    width: 100%;
+    color: #4F4F4F;
+    font-size: 60px;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    padding-bottom: 25px;
+    letter-spacing: 7px;
+    text-shadow:
+        3px 3px 0 #e9c9d3,
+        4px 4px 0 #e9c9d3,
+        6px 5px 0 #e9c9d3;
+}
+
+.pickupitem2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 table {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 td {
@@ -200,20 +270,23 @@ td {
 }
 
 .rankingname {
+    font-family: 'Kaushan Script', cursive;
     width: 100%;
     color: #4F4F4F;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 70px;
+    padding-bottom: 15px;
     letter-spacing: 7px;
-    text-shadow: 
-        1px 0 0 #4F4F4F,
-        2px 0 0 #4F4F4F,
-        3px 0 0 #4F4F4F,
-        3px 3px 0 #D8BD82,
-        4px 4px 0 #D8BD82,
-        6px 5px 0 #D8BD82;
+    text-shadow:
+    3px 3px 0 #e6e1cc,
+    4px 4px 0 #e6e1cc,
+    6px 5px 0 #e6e1cc;
+}
+
+.rankingname2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .rank1 {
